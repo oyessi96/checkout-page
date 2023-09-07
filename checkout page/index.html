@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Checkout</title>
+</head>
+<body class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col py-5 text-center">
+                <h2>Checkout</h2>
+                <p class="lead"> continue checking out here</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h4 clas="mb-3"> Shipping Address</h4>
+                <form action="">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3"></div>
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                        <div class="col-12 col-sm-6 mb-3"></div>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="user" class="form-label">User</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+                                <input type="text" id="user" class="form-control" placeholder="Username">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="email" class="form-label">Email<span class="text-muted"></span></label>
+                            <input type="email" class="form-control" placeholder="Name@email.com" name="email">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="address" class="form-label">Address 1</label>
+                            <input type="text" class="form-control" placeholder="1234 Street Name" name="address">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="address" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" placeholder="Additional information" name="address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="country" class="form-label">Country</label>
+                            <select name="country" id="country" class="form-select">
+                                <option value="">Select Country</option>
+                                <option value="United States">United States</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Canada">Canada</option>
+                                <option value="France">France</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="state" class="form-label">State</label>
+                            <select name="state" id="state" class="form-select">
+                                <option value="">Select State</option>
+                                <option value="United States">United States</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Canada">Canada</option>
+                                <option value="France">France</option>
+                                </select>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3"></div>
+                            <label for="zipcode" class="form-control">Zip Code</label>
+                            <input type="text" id="zipcode" class="form-control">
+                    </div>
+
+                    <hr>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="same-address">
+                                <label for="same-address" class="form-control"> Send to billing address</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="save-information">
+                                <label for="same-direction" class="form-control"> Save information for next purchase</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="credit-card">
+                                <label for="credit-card" class="form-check-label"> Credit Card</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="debit-card">
+                                <label for="debit-card" class="form-check-label"> Debit Card</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="paypal">
+                                <label for="paypal" class="form-check-label"> Paypal</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label class="form-label" for="nameincard">Name on card</label>
+                            <input type="text" id="nameincard" class="form-control">
+                            <small class="text-muted"> Name exactly as it is displayed in the card</small>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 mb-3">
+                        <label class="form-label" for="cardnumber">Number on card</label>
+                        <input type="text" id="cardnumber" class="form-control">
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-sm-4 mb-3">
+                            <label class="form-label" for="expirationdate">Expiration date</label>
+                            <input type="text" id="expirationdate" class="form-control">
+                        </div>
+                        <div class="col-6 col-sm-4 mb-3">
+                            <label class="form-label" for="cardccv">CCV</label>
+                            <input type="text" id="cardccv" class="form-control">
+                        </div>
+                    </div>
+
+                    <hr class="mb-4">
+                    <input type="submit" value="continue payment" class="btn btn-block btn-lg btn-primary">
+
+                </form>
+            </div>
+
+            <div class="col-12 col-md-4 order-1 order-md-2 mb-3">
+				<h4 class="mb-3 d-flex justify-content-between align-items-center">
+					<span class="text-muted">Your cart</span>
+					<span class="badge bg-secondary rounded-pill">3</span>
+				</h4>
+				<ul class="list-group mb-3">
+					<li class="list-group-item d-flex justify-content-between">
+						<div>
+							<h6 class="my-0">Name of Product</h6>
+							<small class="text-muted">Small description</small>
+						</div>
+						<span class="text-muted">$12</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between">
+						<div>
+							<h6 class="my-0">Second Product</h6>
+							<small class="text-muted">Small description</small>
+						</div>
+						<span class="text-muted">$8</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between">
+						<div>
+							<h6 class="my-0">Third product</h6>
+							<small class="text-muted">Small description</small>
+						</div>
+						<span class="text-muted">$5</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between bg-light">
+						<div class="text-success">
+							<h6 class="my-0">Discount code</h6>
+							<small class="text-success">CUPONEXAMPLE</small>
+						</div>
+						<span class="text-success">$-5</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between">
+						<span>Total (USD)</span>
+						<strong>$20</strong>
+					</li>
+				</ul>
+                <form action="" class="card p-2">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="Cupon">
+						<div class="input-group-append">
+							<button class="btn btn-secondary">Redeem</button>
+						</div>
+					</div>
+				</form>
+            </div>
+        </div>
+        <footer class="row my-5 py-5 text-muted text-center text-small">
+			<div class="col">
+				<p class="mb-1">© 2023 Company Name</p>
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="#">Privacy</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#">Terms andConditions</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#">Support</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
